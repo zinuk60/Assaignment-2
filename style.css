@@ -145,6 +145,36 @@ align-items: center;
   margin: 20px auto;
 }
 
+
+/* style for trusted seller section */
+
+.trusted-seller{
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.flower-store{
+  width: 100%;
+}
+.badge{
+  height: 200px;
+  width: 200px;
+  position:relative;
+  top: -300px;
+  left: -120px;
+}
+
+.details .title{
+  color: #111111;
+}
+.details .description{
+  margin-top: 20px;
+  padding-right: 100px;    
+  font-size: 1.2rem;
+  
+}
 /* style for mobile device */
 
 
@@ -176,10 +206,28 @@ align-items: center;
 
 /* style for card section */
 .card{
-  width: 576px;
+  width: 566px;
+  margin: 5px;
 }
   .card-container{
     grid-template-columns: repeat(2,270px);
   
+  }
+
+  /* style for trusted seller section */
+  .trusted-seller{
+    flex-direction: column;
+    width: 566px;
+    margin: 5px ;
+    margin-top: 100px;
+  }
+  
+  .badge{
+    visibility: hidden;
+  }
+  .details .description{
+   padding: 10px;
+   margin: 30px;
+
   }
 }
