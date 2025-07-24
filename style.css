@@ -1,0 +1,185 @@
+ /* style for font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* style for whole  section */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #F5F8FF;
+}
+
+/* style for shared section */
+.title{
+     font-size: 3.8rem;
+     font-weight: bold;
+     color: #E95A08;
+     margin-bottom: 10px;
+}
+
+.description{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right:20px ;
+}
+
+.btn{
+  height: 40px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #E95A08;
+  border:none;
+  cursor: pointer;
+}
+/* style for header section */
+nav{
+  max-width: 1140px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+.nav-items{
+  display: flex;
+  justify-content: center;
+ 
+  gap: 30px;
+}
+.nav-item{
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  color:#8987A1 ;
+
+}
+.item-1{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #252432;
+}
+.item-4{
+  color: #252432;
+}
+
+/* style for hero section */
+
+.hero-section{
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+  margin: 100px auto;
+}
+
+.hero-section img{
+  width: 100%;
+}
+.title-style{
+  color: #000000;
+}
+
+/* style for card section */
+
+.card{
+ max-width: 1140px;
+ margin: 100px auto;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.card-info{
+  max-width: 700px;
+  margin-bottom: 100px;
+}
+.card-info .description{
+  padding: 0;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,270px);
+  justify-content: center;
+align-items: center;
+  margin: 20px auto;
+}
+.card-item{
+  margin: 20px ;
+}
+.card-item img{
+    width: 100%;
+}
+.flower-name{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #111111;
+}
+.card-price{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111111;
+  margin: 20px auto;
+}
+
+/* style for mobile device */
+
+
+@media screen and (max-width:576px) {
+    /* style for nav section */
+  .nav-item:nth-child(n+1){
+   visibility:hidden;
+   }
+ 
+.item-4{
+  visibility: visible;
+  display: flex;
+  width: 50px;
+  font-size: 2rem;
+} 
+
+/* style for hero section */
+
+.hero-section{
+  flex-direction: column-reverse;
+  width: 576px;
+  margin: 20px;
+  
+}
+.hero-section .title{
+  padding-right: 100px;
+  margin-top: 20px;
+}
+
+/* style for card section */
+.card{
+  width: 576px;
+}
+  .card-container{
+    grid-template-columns: repeat(2,270px);
+  
+  }
+}
