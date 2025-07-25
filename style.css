@@ -291,7 +291,9 @@ footer{
 .footer-details{
   width: 300px;
 }
-
+footer .description{
+  margin-top: 20px;
+}
 .footer-list{
   list-style: none; 
   margin-top: 30px;
@@ -303,14 +305,17 @@ footer{
 }
 .social-media img{
  
-  margin-left: 30px;
+margin-left: 30px;
 }
-
+.first-social-image{
+  margin-left: 40px;
+}
 
 /* style for mobile device */
 
 
 @media screen and (max-width:576px) {
+
     /* style for nav section */
   .nav-item:nth-child(n+1){
    visibility:hidden;
@@ -408,5 +413,8 @@ footer{
   margin-left: 20px;
   gap: 20px;
  }
- 
+ .footer-details{
+ width: 400px;
+ }
+
 }
