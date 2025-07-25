@@ -40,7 +40,7 @@ body{
 }
 
 .description{
-    font-size: 20px;
+    font-size: 1.2rem;
     color: rgba(0, 0, 0, 0.5);
     padding-right:20px ;
 }
@@ -237,6 +237,48 @@ align-items: center;
   color: #ffffff;
 }
 
+/* style for subscribe section */
+
+
+.subscribe{
+  width: 1140px;
+  height: 500px;
+  margin: 100px auto;
+  
+ background-image: url(./images/news-letter-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.subscribe-info .title{
+  color: #ffffff;
+  text-align: center;
+}
+.input-field{
+  height: 40px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.subscribe-info input{
+  height: 40px;
+  width: 700px;
+  margin-right: 0;
+  border: none;
+  padding: 0 20px;
+
+}
+.subscribe-info .btn{
+  width: 120px;
+  
+ 
+}
 /* style for mobile device */
 
 
@@ -299,7 +341,7 @@ align-items: center;
     
    display: flex;
    flex-direction: column;
-    gap: 5;
+    gap: 15px;
 
   }
   .deal .description{
@@ -311,4 +353,23 @@ align-items: center;
     width: 566px;
   }
   
+  /* style for subcribe  section */
+
+  .subscribe{
+     width: 556px;
+     height: 250px;
+     margin: 20px auto;
+  }
+ .input-field{
+  width: 400px;
+  margin: 20px auto;
+  justify-content: center;
+ }
+ .subscribe-info input{
+  width: 300px;
+ }
+ .subscribe-info .title{
+  font-size: 2rem;
+ }
+ 
 }
