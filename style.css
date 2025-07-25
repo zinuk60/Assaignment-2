@@ -241,7 +241,7 @@ align-items: center;
 
 
 .subscribe{
-  width: 1140px;
+  width: 100%;
   height: 500px;
   margin: 100px auto;
   
@@ -279,6 +279,34 @@ align-items: center;
   
  
 }
+
+/* style for footer section */
+
+footer{
+  max-width: 1140px;
+  margin: 100px auto;
+  display: flex;
+  gap: 80px;
+}
+.footer-details{
+  width: 300px;
+}
+
+.footer-list{
+  list-style: none; 
+  margin-top: 30px;
+}
+.footer-link{
+  text-decoration: none;
+  color: #8987A1;
+ 
+}
+.social-media img{
+ 
+  margin-left: 30px;
+}
+
+
 /* style for mobile device */
 
 
@@ -347,6 +375,8 @@ align-items: center;
   .deal .description{
     padding: 0;
     margin: 0;
+    text-align: left;
+    margin-left: 20px;
   }
   .image-1,.image-2,.image-3{
     height: 400px;
@@ -370,6 +400,13 @@ align-items: center;
  }
  .subscribe-info .title{
   font-size: 2rem;
+ }
+
+ /* style for footer section */
+ footer{
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
  }
  
 }
