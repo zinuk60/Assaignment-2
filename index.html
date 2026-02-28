@@ -16,7 +16,7 @@
                 <li class="nav-item"><a href="#" class="nav-link"><span class="item-1">Home</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
                 <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="" class="nav-link"><span class="item-4"><i class="fa-solid fa-cart-shopping"></i> Cart($56)</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><span class="item-4"><i class="fa-solid fa-cart-shopping"></i> Cart($<span id="my-Balance">200</span>)</span></a></li>
             </ul>
         </div>
      </nav>
@@ -34,57 +34,88 @@
         <p class="title noto-serif-font">Our <span class="dark1">Plants</span></p>
         <p class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
       </div>
+      <div class="cart">
+        <p class="cart-title">My Cart</p>
+      <p class="cart-price"><span>Total</span> <span><span id="cartPrice">0</span><span>$</span></span> <span><span>quantity x</span><span id="count-Pro">0</span></span></p>
+      </div>
       <div class="card-container inter-font">
+        
         
         <div class="card-item">
                  <img src="./images/sample-flower-image.png" alt="flower">
                  <p class="flower-name">Lily Blossom</p>
                  <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+        <button class="btn" onclick="addData(20,'lily Blossom')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/blue-bloom.jpg" alt="flower">
+                 <p class="flower-name">blue-bloom</p>
+                 <p class="card-price">50 USD</p>
+        <button class="btn" onclick="addData(50,'blue-bloom')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/Pink-Orchid-Deluxe.jpeg" alt="flower">
+                 <p class="flower-name">Pink-Orchid-Deluxe</p>
+                 <p class="card-price">25 USD</p>
+        <button class="btn" onclick="addData(25,'Pink-Orchid-Deluxe')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/Pink-Passion-2.jpg" alt="flower">
+                 <p class="flower-name">Pink-Passion-2</p>
+                 <p class="card-price">40 USD</p>
+        <button class="btn" onclick="addData(40,'Pink-Passion-2')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/pink-yellow-rose-bouquet.jpg" alt="flower">
+                 <p class="flower-name">pink-yellow-rose-bouquet</p>
+                 <p class="card-price">28 USD</p>
+        <button class="btn" onclick="addData(28,'pink-yellow-rose-bouquet')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/Purity-Azure-720x720-600x600.jpg" alt="flower">
+                 <p class="flower-name">Purity-Azure</p>
+                 <p class="card-price">30 USD</p>
+        <button class="btn" onclick="addData(30,'Purity-Azure')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/Purity-Blend-600x649.jpg" alt="flower">
+                 <p class="flower-name">Purity-Blend</p>
+                 <p class="card-price">35 USD</p>
+        <button class="btn" onclick="addData(35,'Purity-Blend')">ADD TO CART</button>
         </div>
         <div class="card-item">
-                 <img src="./images/sample-flower-image.png" alt="flower">
-                 <p class="flower-name">Lily Blossom</p>
-                 <p class="card-price">20 USD</p>
-        <button class="btn">ADD TO CART</button>
+                 <img src="./images/red-rose.jpg" alt="flower">
+                 <p class="flower-name">red-rose</p>
+                 <p class="card-price">15 USD</p>
+        <button class="btn" onclick="addData(15,'red-rose')">ADD TO CART</button>
         </div>
-   
+        <div class="card-item">
+                 <img src="./images/white-rose.jpg" alt="flower">
+                 <p class="flower-name">white-rose</p>
+                 <p class="card-price">50 USD</p>
+        <button class="btn" onclick="addData(50,'white-rose')">ADD TO CART</button>
+        </div>
+        <div class="card-item">
+                 <img src="./images/red-white-rising.jpg" alt="flower">
+                 <p class="flower-name">red-white-rising</p>
+                 <p class="card-price">30 USD</p>
+        <button class="btn" onclick="addData(30,'red-white-rising')">ADD TO CART</button>
+        </div>
+        <div class="card-item">
+                 <img src="./images/Yellow-Poetry.jpg" alt="flower">
+                 <p class="flower-name">Yellow-Poetry</p>
+                 <p class="card-price">40 USD</p>
+        <button class="btn" onclick="addData(40,'Yellow-Poetry')">ADD TO CART</button>
+        </div>
+        <div class="card-item">
+                 <img src="./images/Pink-Passion-2.jpg" alt="flower">
+                 <p class="flower-name">Pink-Passion-1</p>
+                 <p class="card-price">30 USD</p>
+        <button class="btn" onclick="addData(30,'Pink-Passion-1')">ADD TO CART</button>
+        </div>
+       
+        
+      
 
       </div>
     </section>
@@ -165,5 +196,6 @@
     <img src="./images/icon-youtube.png" alt="icon-youtube">
   </div>
  </footer>
+ <script src="script.js"></script>
 </body>
 </html>

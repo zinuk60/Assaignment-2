@@ -310,7 +310,27 @@ margin-left: 30px;
 .first-social-image{
   margin-left: 40px;
 }
+.cart{
+  height: 150px;
+  width: 100%;
 
+background-color: rgb(231, 233, 252); 
+ font-size: 25px;
+}
+.cart-title{
+  font-size: 40px;
+  margin-top: 10px;
+  color:#E85A08 ;
+  font-weight:600;
+
+  
+}
+.cart-price{
+  display: flex;
+  justify-content: space-around;
+  justify-items:center;
+  margin-top: 20px;
+}
 /* style for mobile device */
 
 
